@@ -1,0 +1,12 @@
+/* Contact page specific styles */
+.contact-form {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.form-success {
+    color: #10b981;
+}
+
+.form-error {
+    color: #ef4444;
+}

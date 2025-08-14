@@ -1,0 +1,12 @@
+/* Events page specific styles */
+.event-countdown {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.event-card {
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-2px);
+}

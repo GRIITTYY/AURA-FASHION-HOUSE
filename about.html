@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story - AURA Fashion House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body class="antialiased">
+
+    <!-- Marquee -->
+    <div class="bg-black text-white py-2 overflow-hidden">
+        <div class="marquee-content whitespace-nowrap">
+            <span class="text-sm uppercase tracking-widest mx-4">AURA Genesis Collection Launching Soon</span>
+            <span class="text-sm uppercase tracking-widest mx-4">◆</span>
+            <span class="text-sm uppercase tracking-widest mx-4">Book Your Private Viewing Appointment Today</span>
+            <span class="text-sm uppercase tracking-widest mx-4">◆</span>
+            <span class="text-sm uppercase tracking-widest mx-4">Upcoming Event: Met Gala Showcase - See Our Events Page</span>
+             <span class="text-sm uppercase tracking-widest mx-4">◆</span>
+        </div>
+    </div>
+
+    <!-- Header and Navigation -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold tracking-wider md:-ml-20 cursor-pointer" onclick="window.location.href='index.html'">AURA</h1>
+            
+            <!-- Desktop Navigation -->
+            <nav>
+                <ul class="flex space-x-8 text-sm uppercase tracking-widest">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="collections.html" class="nav-link">Collections</a></li>
+                    <li><a href="about.html" class="nav-link">Our Story</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dom.html" class="nav-link">DOM Structure</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger-menu md:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dom.html">DOM Structure</a></li>
+        </ul>
+    </div>
+
+    <main class="page-content">
+        <!-- About Page Content -->
+        <div class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl text-center font-bold mb-4">Our Story</h2>
+            <p class="text-center max-w-3xl mx-auto text-gray-700 mb-12">AURA was founded on the belief that clothing is a form of art and identity. We are a collective of designers, artisans, and visionaries dedicated to sustainable practices and exceptional craftsmanship. Our mission is to create pieces that are not only beautiful but also meaningful.</p>
+            <h3 class="text-3xl text-center font-bold mb-10">The Faces Behind AURA</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                
+                <div class="text-center member-card">
+                    <img src="assets/images/ikechukwu_obunadike.jpg" alt="Team Member 1" class="w-48 h-48 mx-auto rounded-full object-cover mb-4 shadow-lg">
+                    <h4 class="text-xl font-semibold">Ikechukwu Obunadike</h4>
+                    <p class="text-gray-500">CEO / Founder</p>
+                </div>
+                
+                <div class="text-center member-card">
+                    <img src="assets/images/gbenmo_esemokumo_divine.jpg" alt="Team Member 2" class="w-48 h-48 mx-auto rounded-full object-cover mb-4 shadow-lg">
+                    <h4 class="text-xl font-semibold">Gbenmo Esemokumo Divine</h4>
+                    <p class="text-gray-500">Creative Director</p>
+                </div>
+                
+                <div class="text-center member-card">
+                    <img src="assets/images/joseph_udofia.jpg" alt="Team Member 3" class="w-48 h-48 mx-auto rounded-full object-cover mb-4 shadow-lg">
+                    <h4 class="text-xl font-semibold">Joseph Udofia</h4>
+                    <p class="text-gray-500">Production Manager</p>
+                </div>
+                
+                <div class="text-center member-card">
+                    <img src="assets/images/samuel_momoh.jpg" alt="Team Member 4" class="w-48 h-48 mx-auto rounded-full object-cover mb-4 shadow-lg">
+                    <h4 class="text-xl font-semibold">Samuel Momoh</h4>
+                    <p class="text-gray-500">Finance Manager</p>
+                </div>
+      
+                <div class="text-center member-card">
+                    <img src="assets/images/david_atu_johnson.jpg" alt="Team Member 5" class="w-48 h-48 mx-auto rounded-full object-cover mb-4 shadow-lg">
+                    <h4 class="text-xl font-semibold">David Atu Johnson</h4>
+                    <p class="text-gray-500">Textile Designer</p>
+                </div>
+
+                <div class="text-center member-card">
+                    <img src="assets/images/tony_emmanuel.jpg" alt="Team Member 6" class="w-48 h-48 mx-auto rounded-full object-cover mb-4 shadow-lg">
+                    <h4 class="text-xl font-semibold">Tony Emmanuel</h4>
+                    <p class="text-gray-500">Social Media Manger</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+            <p>&copy; <span id="currentYear"></span> AURA Fashion House. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Crafted with passion for the modern muse.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top bg-black text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-800" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script src="js/common.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

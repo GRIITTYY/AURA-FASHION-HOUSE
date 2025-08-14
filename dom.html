@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Structure - AURA Fashion House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/dom.css">
+</head>
+<body class="antialiased">
+
+    <!-- Marquee -->
+    <div class="bg-black text-white py-2 overflow-hidden">
+        <div class="marquee-content whitespace-nowrap">
+            <span class="text-sm uppercase tracking-widest mx-4">AURA Genesis Collection Launching Soon</span>
+            <span class="text-sm uppercase tracking-widest mx-4">◆</span>
+            <span class="text-sm uppercase tracking-widest mx-4">Book Your Private Viewing Appointment Today</span>
+            <span class="text-sm uppercase tracking-widest mx-4">◆</span>
+            <span class="text-sm uppercase tracking-widest mx-4">Upcoming Event: Met Gala Showcase - See Our Events Page</span>
+            <span class="text-sm uppercase tracking-widest mx-4">◆</span>
+        </div>
+    </div>
+
+    <!-- Header and Navigation -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold tracking-wider md:-ml-20 cursor-pointer" onclick="window.location.href='index.html'">AURA</h1>
+            
+            <!-- Desktop Navigation -->
+            <nav>
+                <ul class="flex space-x-8 text-sm uppercase tracking-widest">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="collections.html" class="nav-link">Collections</a></li>
+                    <li><a href="about.html" class="nav-link">Our Story</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="dom.html" class="nav-link">DOM Structure</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger-menu md:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dom.html">DOM Structure</a></li>
+        </ul>
+    </div>
+
+    <main class="page-content">
+        <div class="container mx-auto px-6 py-16">
+            <h2 class="text-4xl text-center font-bold mb-4">Website DOM Structure</h2>
+            <p class="text-center max-w-3xl mx-auto text-gray-700 mb-8">
+                The Document Object Model (DOM) represents the page as a tree of nodes. Select a page to view its structure.
+            </p>
+
+            <!-- Dropdown List -->
+            <div class="flex flex-col gap-3 md:flex-row md:items-center md:gap-6 mb-6">
+                <div class="flex items-center gap-3">
+                    <label for="pageSelect" class="text-sm font-medium text-gray-700">Select page:</label>
+                    <select id="pageSelect" class="border border-gray-300 rounded px-3 py-2">
+                        <option value="index.html">index.html</option>
+                        <option value="collections.html">collections.html</option>
+                        <option value="about.html">about.html</option>
+                        <option value="events.html">events.html</option>
+                        <option value="contact.html">contact.html</option>
+                        <option value="dom.html" selected>dom.html</option>
+                    </select>
+                </div>
+
+                <span id="status" class="text-sm text-gray-500 md:ml-auto"></span>
+            </div>
+
+            <!-- ASCII tree -->
+            <div class="bg-gray-800 text-white font-mono p-6 rounded-lg overflow-x-auto dom-structure code-block">
+                <pre id="domPre">Loading…</pre>
+            </div>
+
+            <div class="mt-8 bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-4">Check More Pages above</h3>
+                <p class="text-gray-700 mb-4">Use the dropdown list provided at the top left.</p>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-600">
+            <p>&copy; <span id="currentYear"></span> AURA Fashion House. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Crafted with passion for the modern muse.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top bg-black text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-800" onclick="scrollToTop()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script src="js/common.js"></script>
+    <script src="js/dom.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* About page specific styles */
+.member-card {
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+}

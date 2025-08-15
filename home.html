@@ -26,12 +26,12 @@
     <!-- Header and Navigation -->
     <header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold tracking-wider md:-ml-20 cursor-pointer" onclick="window.location.href='index.html'">AURA</h1>
+            <h1 class="text-3xl font-bold tracking-wider md:-ml-20 cursor-pointer" onclick="window.location.href='home.html'">AURA</h1>
             
             <!-- Desktop Navigation -->
             <nav>
                 <ul class="flex space-x-8 text-sm uppercase tracking-widest">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
                     <li><a href="collections.html" class="nav-link">Collections</a></li>
                     <li><a href="about.html" class="nav-link">Our Story</a></li>
                     <li><a href="events.html" class="nav-link">Events</a></li>
@@ -52,7 +52,7 @@
     <!-- Mobile Navigation Menu -->
     <div class="mobile-nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="collections.html">Collections</a></li>
             <li><a href="about.html">Our Story</a></li>
             <li><a href="events.html">Events</a></li>
@@ -71,6 +71,41 @@
                 </div>
             </div>
         </div>
+
+        <!-- Featured Fits Section -->
+        <div class="container mx-auto px-6 py-12">
+            <h3 class="text-3xl font-bold text-center mb-8">Featured Fits</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="assets/images/collections/evening_glow.jpeg" alt="Evening Glow" class="w-full object-contain max-h-96 bg-gray-100">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Evening Glow</h4>
+                        <p class="text-gray-600 mb-4">Radiate elegance with this luminous evening look.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="assets/images/collections/executive_bloom.jpeg" alt="Executive Bloom" class="w-full object-contain max-h-96 bg-gray-100">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Executive Bloom</h4>
+                        <p class="text-gray-600 mb-4">A statement fit for leaders—where sophistication meets style.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="assets/images/collections/modern_mariner.jpeg" alt="Modern Mariner" class="w-full object-contain max-h-96 bg-gray-100">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Modern Mariner</h4>
+                        <p class="text-gray-600 mb-4">Navigate the city in nautical-inspired fashion.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="collections.html" class="inline-block bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition">Browse More Fits</a>
+            </div>
+        </div>
+
     </main>
 
     <!-- Footer -->

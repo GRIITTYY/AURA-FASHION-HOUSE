@@ -26,12 +26,12 @@
     <!-- Header and Navigation -->
     <header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold tracking-wider md:-ml-20 cursor-pointer" onclick="window.location.href='index.html'">AURA</h1>
+            <h1 class="text-3xl font-bold tracking-wider md:-ml-20 cursor-pointer" onclick="window.location.href='home.html'">AURA</h1>
             
             <!-- Desktop Navigation -->
             <nav>
                 <ul class="flex space-x-8 text-sm uppercase tracking-widest">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
                     <li><a href="collections.html" class="nav-link">Collections</a></li>
                     <li><a href="about.html" class="nav-link">Our Story</a></li>
                     <li><a href="events.html" class="nav-link">Events</a></li>
@@ -52,7 +52,7 @@
     <!-- Mobile Navigation Menu -->
     <div class="mobile-nav">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li><a href="collections.html">Collections</a></li>
             <li><a href="about.html">Our Story</a></li>
             <li><a href="events.html">Events</a></li>
@@ -66,16 +66,15 @@
         <div class="container mx-auto px-6 py-16">
             <h2 class="text-4xl text-center font-bold mb-12">The Genesis Collection</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 product-grid">
-                <!-- Product 1 -->
-                <div class="group cursor-pointer" onclick="showProductModal(this)" data-desc="A dramatic floor-length gown in silk charmeuse with hand-embellished detailing, perfect for making a grand entrance.'">
+               
+                <div class="group cursor-pointer" onclick="showProductModal(this)" data-desc="A dramatic floor-length gown in silk charmeuse with hand-embellished detailing, perfect for making a grand entrance.">
                 <div class="overflow-hidden rounded-lg">
                     <img src="assets/images/collections/monarch_gown.png" alt="The Monarch Gown" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
                 </div>
                 <h3 class="text-xl font-semibold mt-4">The Monarch Gown</h3>
                 <p class="text-gray-600">Evening Wear</p>
                 </div>
-
-                <!-- Product 2 -->
+                
                 <div class="group cursor-pointer" onclick="showProductModal(this)" data-desc="A versatile leather jacket with a modern cut and timeless appeal. Crafted from ethically sourced lambskin.">
                 <div class="overflow-hidden rounded-lg">
                     <img src="assets/images/collections/nomad_jacket.png" alt="The Nomad Jacket" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
@@ -83,14 +82,61 @@
                 <h3 class="text-xl font-semibold mt-4">The Nomad Jacket</h3>
                 <p class="text-gray-600">Outerwear</p>
                 </div>
-
-                <!-- Product 3 -->
+                
                 <div class="group cursor-pointer" onclick="showProductModal(this)" data-desc="A powerfully tailored suit in Italian wool that offers a sharp silhouette and confident presence.">
                 <div class="overflow-hidden rounded-lg">
                     <img src="assets/images/collections/oracle_suit.png" alt="The Oracle Suit" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
                 </div>
                 <h3 class="text-xl font-semibold mt-4">The Oracle Suit</h3>
                 <p class="text-gray-600">Formal Wear</p>
+                </div>
+
+                <div class="group cursor-pointer" onclick="showProductModal(this)" data-desc="Illuminate every occasion with this radiant evening look, crafted for sophistication and charm.">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="assets/images/collections/evening_glow.jpeg" alt="Evening Glow" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Evening Glow</h3>
+                <p class="text-gray-600">Evening Wear</p>
+                </div>
+
+                <div class="group cursor-pointer" onclick="showProductModal(this)" data-desc="A statement piece for leaders—where sophistication meets vibrant style.">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="assets/images/collections/executive_bloom.jpeg" alt="Executive Bloom" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Executive Bloom</h3>
+                <p class="text-gray-600">Formal Wear</p>
+                </div>
+
+                <div class="group cursor-pointer" onclick="showProductModal(this)" data-desc="Navigate the city in nautical-inspired fashion, perfect for the modern explorer.">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="assets/images/collections/modern_mariner.jpeg" alt="Modern Mariner" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Modern Mariner</h3>
+                <p class="text-gray-600">Casual Wear</p>
+                </div>
+
+                <div class="group cursor-pointer" onclick="showProductModal(this)" data-desc="A refreshing blend of comfort and style, inspired by tranquil oasis escapes.">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="assets/images/collections/oasis.jpeg" alt="Oasis" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Oasis</h3>
+                <p class="text-gray-600">Resort Wear</p>
+                </div>
+                
+                <div class="group cursor-pointer" onclick="showProductModal(this)" data-desc="Experience luxurious nights in this velvet masterpiece, designed for unforgettable evenings.">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="assets/images/collections/velvet_evening.jpeg" alt="Velvet Evening" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Velvet Evening</h3>
+                <p class="text-gray-600">Evening Wear</p>
+                </div>
+
+                <div class="group cursor-pointer" onclick="showProductModal(this)" data-desc="A lush, flowing gown inspired by the richness of nature and garden soirées.">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="assets/images/collections/verdant_gown.jpeg" alt="Verdant Gown" class="w-full h-96 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Verdant Gown</h3>
+                <p class="text-gray-600">Evening Wear</p>
                 </div>
             </div>
         </div>
@@ -113,8 +159,8 @@
     
     <!-- Product Modal -->
     <div id="productModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-lg max-w-3xl w-full m-4 flex flex-col md:flex-row overflow-hidden">
-            <img id="modalImage" src="" alt="Product Image" class="w-full md:w-1/2 h-96 object-cover">
+        <div class="bg-white rounded-lg max-w-3xl w-full m-4 flex flex-col md:flex-row overflow-auto" style="max-height:90vh;">
+            <img id="modalImage" src="" alt="Product Image" class="w-full md:w-1/2 h-60 md:h-96 object-cover flex-shrink-0">
             <div class="p-8 flex flex-col justify-center">
                 <h3 id="modalTitle" class="text-3xl font-bold mb-4"></h3>
                 <p id="modalDescription" class="text-gray-700 mb-6"></p>

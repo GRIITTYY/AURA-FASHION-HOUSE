@@ -1,4 +1,3 @@
-/* Collections page specific styles */
 .product-grid {
     animation: fadeIn 0.8s ease-in-out;
 }
@@ -6,4 +5,16 @@
 .group:hover img {
     transform: scale(1.1);
     transition: transform 0.5s ease;
+}
+
+#productModal > div {
+  max-height: 90vh;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  #productModal > div {
+    max-height: 90vh !important;
+    height: 90vh !important;
+  }
 }
